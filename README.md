@@ -1,2 +1,2 @@
 # TSI
-Repositório o curso de TSI - IFPB
+Repositório do curso de TSI - IFPB
