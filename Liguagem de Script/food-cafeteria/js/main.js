@@ -1,7 +1,10 @@
 import dataset from './model/dataset.js';
 import foodsModel from './model/food.js';
 
-foodsModel.load(dataset);
+if (localStorage.getItem('foods-app:loaded') !== 'ok') {
+  foodsModel.load(dataset);
+  localStorage.setItem('foods-app:loaded', 'ok');
+}
 let foods = foodsModel.readAll();
 
 for (const item of foods) {
